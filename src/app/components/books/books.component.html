@@ -1,0 +1,19 @@
+<section class="mt-5">
+    <div class="container">
+      <div class="row">
+        <h1 class="text-center">Ebook Listing</h1>
+        <div class="col-12 d-flex justify-content-between">
+          <app-card
+            *ngFor="let book of allBooks"
+            class="col-md-3"
+            [id]="book.attributes.book.id"
+            [image]="book.attributes.book.image_url"
+            [title]="book.attributes.book.title"
+            [desc]="book.attributes.book.description"
+            [date]="book.attributes.book.created_at"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+  

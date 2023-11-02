@@ -1,0 +1,13 @@
+<section>
+  <div [routerLink]="['/books', id]" class="card--body">
+    <div class="card--body__name">
+      {{ title }}
+    </div>
+    <div class="card--body__desc">
+      {{ desc }}
+    </div>
+    <div class="card--body__date text-end">
+      {{ date | date }}
+    </div>
+  </div>
+</section>
